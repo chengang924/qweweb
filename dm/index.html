@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="welcome-section">
+        <h1 class="welcome-text">欢迎来到我的世界</h1>
+    </div>
+
+    <div class="carousel-container">
+        <h2 class="section-title">我的摄影作品</h2>
+        <div class="carousel">
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+            <div class="carousel-slides">
+                <div class="slide active">
+                    <img src="images/2024-11-12-222412.jpg" alt="陈刚">
+                    <div class="slide-info">
+                        <h3>陈刚</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/1700197902323.jpg" alt="任智恒">
+                    <div class="slide-info">
+                        <h3>任智恒</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/Cache_5fcf334538b4cb7e_hd.jpg" alt="李海兵">
+                    <div class="slide-info">
+                        <h3>李海兵</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/IMG_20240915_061030.jpg" alt="周亮亮">
+                    <div class="slide-info">
+                        <h3>周亮亮</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/IMG_20240915_061158.jpg" alt="高金龙">
+                    <div class="slide-info">
+                        <h3>高金龙</h3>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/1731481953413.jpg" alt="陈华伟">
+                    <div class="slide-info">
+                        <h3>陈华伟</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators"></div>
+        </div>
+    </div>
+
+    <div class="gallery-section">
+        <h2 class="section-title">摄影作品分类</h2>
+        <div class="gallery-categories">
+            <!-- 第一排 -->
+            <div class="category-row">
+                <div class="gallery-item" onclick="showImage('images/2024-11-12-222412.jpg', '陈刚')">
+                    <img src="images/2024-11-12-222412.jpg" alt="陈刚">
+                    <div class="image-info">
+                        <h4>陈刚</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="showImage('images/1700197902323.jpg', '任智恒')">
+                    <img src="images/1700197902323.jpg" alt="任智恒">
+                    <div class="image-info">
+                        <h4>任智恒</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="showImage('images/Cache_5fcf334538b4cb7e_hd.jpg', '李海兵')">
+                    <img src="images/Cache_5fcf334538b4cb7e_hd.jpg" alt="李海兵">
+                    <div class="image-info">
+                        <h4>李海兵</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二排 -->
+            <div class="category-row second-row">
+                <div class="gallery-item" onclick="showImage('images/1731481953413.jpg', '陈华伟')">
+                    <img src="images/1731481953413.jpg" alt="陈华伟">
+                    <div class="image-info">
+                        <h4>陈华伟</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="showImage('images/IMG_20240915_061030.jpg', '周亮亮')">
+                    <img src="images/IMG_20240915_061030.jpg" alt="周亮亮">
+                    <div class="image-info">
+                        <h4>周亮亮</h4>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="showImage('images/IMG_20240915_061158.jpg', '高金龙')">
+                    <img src="images/IMG_20240915_061158.jpg" alt="高金龙">
+                    <div class="image-info">
+                        <h4>高金龙</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-links">
+        <a href="mailto:9@7.com" class="social-icon wechat" title="邮箱: 9@7.com">
+            <i class="fab fa-weixin"></i>
+            <span class="tooltip">邮箱: 9@7.com</span>
+        </a>
+        <a href="https://v.douyin.com/iA9GgTxe/" class="social-icon douyin" title="抖音号: 7pm" target="_blank">
+            <svg t="1701234567890" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M937.4 423.9c-84 0-165.7-27.3-232.9-77.8v352.3c0 179.9-138.6 325.6-309.6 325.6S85.3 878.3 85.3 698.4c0-179.9 138.6-325.6 309.6-325.6 17.1 0 33.7 1.5 49.9 4.3v186.6c-15.5-6.1-32-9.2-48.8-9.2-76.3 0-138.2 65-138.2 145.3 0 80.3 61.9 145.3 138.2 145.3 76.3 0 138.2-65 138.2-145.3V0H707c0 134.5 103.7 243.5 231.6 243.5v180.3l-1.2 0.1" fill="currentColor"></path>
+            </svg>
+            <span class="tooltip">抖音号: 7pm</span>
+        </a>
+        <a href="https://qm.qq.com/q/VQAgpm1Eoq" class="social-icon qq" title="QQ" target="_blank">
+            <i class="fab fa-qq"></i>
+            <span class="tooltip">点击添加QQ好友</span>
+        </a>
+    </div>
+
+    <div class="image-viewer" id="imageViewer">
+        <span class="close-viewer">&times;</span>
+        <img id="fullImage" src="" alt="全屏图片">
+    </div>
+
+    <div class="quote-section">
+        <div class="quote-content">
+            <p>生命中的大雨，很多时候我们只能自己淋</p>
+            <p>想要去的地方很遥远，我们也只能自己走。</p>
+            <p>有时候山路就是这么狭窄，只容许一个人前行。</p>
+            <p>但有时候我就会觉得，这世界确实很糟糕，但还有美好的东西存在，值得我在往前走一走</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slides .slide');
+            const indicators = document.querySelector('.carousel-indicators');
+            let currentSlide = 0;
+
+            // 创建指示器
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('indicator');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                indicators.appendChild(dot);
+            });
+
+            // 切换到指定幻灯片
+            function goToSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                document.querySelectorAll('.indicator')[currentSlide].classList.remove('active');
+                
+                // 计算下一张幻灯片的索引（顺序循环）
+                currentSlide = (n + slides.length) % slides.length;
+                
+                slides[currentSlide].classList.add('active');
+                document.querySelectorAll('.indicator')[currentSlide].classList.add('active');
+            }
+
+            // 下一张
+            document.querySelector('.next').addEventListener('click', () => {
+                goToSlide(currentSlide + 1);
+            });
+            
+            // 上一张
+            document.querySelector('.prev').addEventListener('click', () => {
+                goToSlide(currentSlide - 1);
+            });
+
+            // 自动播放，每3秒切换到下一张
+            setInterval(() => {
+                goToSlide(currentSlide + 1);
+            }, 3000);
+        });
+
+        function showImage(imageSrc, title) {
+            const imageViewer = document.getElementById('imageViewer');
+            const fullImage = document.getElementById('fullImage');
+            const closeBtn = document.querySelector('.close-viewer');
+
+            fullImage.src = imageSrc;
+            fullImage.alt = title;
+            imageViewer.style.display = 'block';
+
+            // 添加关闭按钮点击事件
+            closeBtn.onclick = function() {
+                imageViewer.style.display = 'none';
+            };
+
+            // 点击图片查看器背景关闭
+            imageViewer.onclick = function(e) {
+                if (e.target === imageViewer || e.target === closeBtn) {
+                    imageViewer.style.display = 'none';
+                }
+            };
+        }
+
+        // 添加ESC键关闭功能
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                document.getElementById('imageViewer').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html> 
